@@ -1,0 +1,24 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f8ff; /* Vert claire */
+    padding: 20px;
+}
+.footer-column {
+    width: calc(33.33% - 20px);
+    text-align: center;
+}
+#center-column {
+    width: calc(50% - 20px);
+    background-color: #90ee90; /* Vert claire pour le container du centre */
+    padding: 20px;
+}
+#credit {
+    text-align: center;
+    margin-top: 20px;
+}
