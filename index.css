@@ -1,18 +1,25 @@
 /* La side bar */
+
+.container1{
+
+}
+
 .sidenav {
     height: 100%; 
-    width: 150px; 
-    position:relative;
+    width: 140px; 
+    position:fixed;
     z-index: 1; 
     top: 0; 
     left: 0;
     background-color: #69bf64; 
     overflow-x: hidden; 
     padding-top: 20px;
+    margin-top: 125px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
   }
   
   /* La navigation menu liens */
@@ -64,6 +71,7 @@ body {
 
 .titre {
   color: #4CAF50;
+  font-size: xx-large;
 }
 
 nav {
@@ -95,4 +103,43 @@ nav {
   border-radius: 5px; /* Rayon de bordure */
 }
   
+/* CSS banniere */
+
+.banniere {
+  text-align: center; /* Center the image horizontally */
+  margin-top: 20px; /* Adjust the margin as needed */
+  margin-left: 160px;
+  margin-right: 20px;
   
+}
+
+.banniere img {
+  width: 100%; /* Ensure the image fills the container */
+  max-height: 500px; /* Limit the maximum height of the image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 20px; /* Rounded corners for aesthetics */
+}
+
+/* Animation for the banner */
+
+.banniere img {
+  animation: fadeIn 1s ease-in-out; /* Add fadeIn animation */
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0; /* Start with opacity 0 */
+  }
+  100% {
+      opacity: 1; /* Fade in to opacity 1 */
+  }
+}
+
+body {
+  background-color: #bad7bb;
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
