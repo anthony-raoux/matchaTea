@@ -1,0 +1,113 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #C3C3C3;
+}
+
+.form_title {
+    color: #fff;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.form_container {
+    margin-top: 25px;
+    display: flex;
+}
+
+.box-text {
+    flex: 1; /* Les deux boîtes occupent la même largeur */
+    border-right: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-text_paragraphe {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* Box 2 */
+.box-form {
+    flex: 1; /* Les deux boîtes occupent la même largeur */
+    border-left: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.case {
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 75px;
+}
+
+.formBloc {
+    color: #fff; /* Label color */
+    font-size: 22px;
+}
+
+.formSelect {
+    padding: 10px 75px;
+    outline: none;
+    background: none;
+    border: 3px solid #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    appearance: none;
+    color: #000;
+}
+.formSelect option {
+    text-align: center; /* Centrer le texte à l'intérieur de chaque option */
+    padding-left: 10px; /* Ajouter un padding à gauche pour centrer le texte */
+}
+
+.text_color {
+    color: #fff !important;
+}
+
+.defaultOption {
+    color: white; /* Couleur du texte en blanc */
+}
+
+.formGroupe {
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-out;
+    text-align: center;
+    margin: 10px 0 50px 0;
+}
+
+.form_input {
+    padding: 10px 0 2.5px 0;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form_input::placeholder {
+    color: #000;
+}
+
+.submit_btn:hover {
+    background: #fff;
+    color: #C3C3C3;
+}
+
+
+
+
