@@ -1,32 +1,24 @@
 /* La side bar */
 
-.container1{
-
-}
-
 .sidenav {
-    height: 100%; 
+    height: 83vh; 
     width: 140px; 
     position:fixed;
-    z-index: 1; 
-    top: 0; 
+    bottom: 0; 
     left: 0;
     background-color: #69bf64; 
-    overflow-x: hidden; 
-    padding-top: 20px;
-    margin-top: 125px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
   }
   
-  /* La navigation menu liens */
+  /* La navigation side bar liens */
+
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #000000;
     display: block;
     writing-mode: vertical-rl;
@@ -35,43 +27,33 @@
     font-family: "Gravitas One", serif;
     font-weight: 400;
     font-style:italic;
-    margin-bottom: 25px;
   }
   
   /* hover les liens  */
+
   .sidenav a:hover {
     color: #f1f1f1;
   }
-  
-  /* Style le main */
-  .main {
-    margin-left: 160px; 
-    padding: 0px 10px;
-  }
-  
-  /* responsive */
-  @media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-        width: 100px; 
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
-}
-
+ 
 /* barre de navigation */
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Gravitas One", serif;
-  
 }
 
-.titre {
+main {
+  margin-left: 150px;
+}
+
+.titreprincipale {
   color: #4CAF50;
   font-size: xx-large;
+}
+
+.titreprincipale:hover {
+  text-shadow: 1px 1px 2px rgb(39, 171, 61), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 nav {
@@ -82,49 +64,37 @@ nav {
   padding: 10px;
 }
 
-.logo {
+.logo2 {
   width: 100px; 
 }
 
-.logo img {
+.logo2 img {
   max-width: 100%;
+  transition: transform 0.3s ease;
 }
 
-.bouton {
-  background-color: #4CAF50; /* Couleur de fond */
-  border: none; /* Suppression de la bordure */
-  color: white; /* Couleur du texte */
-  padding: 10px 20px; /* Remplissage intérieur */
-  text-align: center; /* Alignement du texte au centre */
-  text-decoration: none; /* Suppression du soulignement */
-  display: inline-block; /* Affichage en ligne pour s'adapter à la largeur du contenu */
-  font-size: 16px; /* Taille de police */
-  cursor: pointer; /* Curseur de type pointer */
-  border-radius: 5px; /* Rayon de bordure */
-}
-  
-/* CSS banniere */
-
-.banniere {
-  text-align: center; /* Center the image horizontally */
-  margin-top: 20px; /* Adjust the margin as needed */
-  margin-left: 160px;
-  margin-right: 20px;
-  
+.logo2:hover{
+  transform: scale(1.1);
 }
 
-.banniere img {
-  width: 100%; /* Ensure the image fills the container */
-  max-height: 500px; /* Limit the maximum height of the image */
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
-  border-radius: 20px; /* Rounded corners for aesthetics */
+.logo1 {
+  width: 100px;
 }
 
-/* Animation for the banner */
-
-.banniere img {
-  animation: fadeIn 1s ease-in-out; /* Add fadeIn animation */
+.logo1 img {
+  max-width: 100%;
+  transition: transform 0.3s ease;
 }
+
+.logo1:hover{
+  transform: scale(1.1);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+} 
 
 @keyframes fadeIn {
   0% {
@@ -138,8 +108,125 @@ nav {
 body {
   background-color: #bad7bb;
 }
-header {
-  position: sticky;
-  top: 0;
-  left: 0;
+
+/* responsive */
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+        width: 100px; 
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+/* Styles for banner */
+
+.banniere {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+}
+
+.banniere img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 10 10 10 10;
+  
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  
+}
+
+.banniere:hover .overlay-text {
+  opacity: 1;
+}
+
+/* Styles for product container */
+
+.product {
+  flex: 1 1 300px; /* Adjust the width as needed */
+  margin: 0 10px 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: justify;
+  transition: transform 0.8s ease;
+}
+
+.product:hover{
+  transform: scale(0.9);
+}
+
+.product h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-top: 0;
+  text-align: center;
+}
+
+.product p {
+  margin-bottom: 10px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.titre1 {
+  text-align: center;
+  font-size: x-large;
+  background-color: #f1f1f1;
+  transition: background-color 0.8s ease;
+}
+
+.titre1:hover{
+  background-color: darkgreen;
+}
+
+/* VIDEO */
+
+.video-container {
+  width: 100%; /* Set the width to 100% of the parent container */
+  max-width: 800px; /* Set the maximum width to prevent the video from becoming too large */
+  margin: 0 auto; /* Center the video container horizontally */
+  border-radius: 15px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-media {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.video-media video {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.video-media video::-webkit-media-controls {
+  border-radius: 0 0 15px 15px; /* Add rounded corners to the bottom */
+  padding: 10px; /* Add some padding */
 }
