@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex: 0 0 20%;
   }
   
   /* La navigation side bar liens */
@@ -129,6 +130,15 @@ body {
   padding: 20px;
 }
 
+.bannieretitre1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 20px;
+  flex: 0 0 80%;
+}
+
 /* Styles for banner */
 
 .banniere {
@@ -153,7 +163,8 @@ body {
   transition: opacity 0.3s ease;
   color: rgb(0, 0, 0);
   text-align: center;
-  
+  margin-top: 50px;
+  font-size: 80px;
 }
 
 .banniere:hover .overlay-text {
