@@ -63,6 +63,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  z-index: 100;
 }
 
 .logo2 {
@@ -134,8 +135,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  padding: 20px;
   flex: 0 0 80%;
 }
 
@@ -149,9 +148,6 @@ body {
 .banniere img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  padding: 10 10 10 10;
-  
 }
 
 .overlay-text {
@@ -241,3 +237,187 @@ body {
   border-radius: 0 0 15px 15px; /* Add rounded corners to the bottom */
   padding: 10px; /* Add some padding */
 }
+
+/* Galery */
+
+.galery {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+  padding: 0 14px;
+}
+.galery::after {
+  content:'';
+  display:block;
+  flex-grow: 10;
+}
+.galery li {
+  list-style-type: none;
+  width: 250px;
+  height: 250px;
+}
+.galery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* contact */
+
+.form_title {
+  color: #fff;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.form_container {
+  margin-top: 25px;
+  display: flex;
+}
+
+.box-text {
+  flex: 1; /* Les deux boîtes occupent la même largeur */
+  border-right: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-text_paragraphe {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+/* Box 2 */
+.box-form {
+  flex: 1; /* Les deux boîtes occupent la même largeur */
+  border-left: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: 100px;
+}
+
+.case {
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 75px;
+}
+
+.formBloc {
+  color: #fff; /* Label color */
+  font-size: 22px;
+}
+
+.formSelect {
+  padding: 10px 75px;
+  outline: none;
+  background: none;
+  border: 3px solid #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  appearance: none;
+  color: #000;
+}
+.formSelect option {
+  text-align: center; /* Centrer le texte à l'intérieur de chaque option */
+  padding-left: 10px; /* Ajouter un padding à gauche pour centrer le texte */
+}
+
+.text_color {
+  color: #fff !important;
+}
+
+.defaultOption {
+  color: white; /* Couleur du texte en blanc */
+}
+
+.formGroupe {
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s ease-out;
+  text-align: center;
+  margin: 10px 0 50px 0;
+}
+
+.form_input {
+  padding: 10px 0 2.5px 0;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 3px solid #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form_input::placeholder {
+  color: #000;
+}
+
+.submit_btn:hover {
+  background: #fff;
+  color: #C3C3C3;
+}
+
+/* administrateur */
+
+.administrateur_container {
+  margin: 50px;
+}
+
+/* .admin_container_gradient {
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)),
+  #000000;
+  overflow: 10;
+} */
+
+.administrateur_content {
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 25px;
+  display: flex;
+  gap: 25px;
+}
+
+.product_img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.admin_text {
+  display: flex;
+  align-items: center;
+}
+
+.admin_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn_admin_change {
+  border: 2px solid #000;
+  padding: 5px 15px;
+  color: #000;
+  text-decoration: none;
+}
+
+
+.btn_admin_trash {
+  border: 2px solid #000;
+  padding: 5px 15px;
+  color: #000;
+  text-decoration: none;
+}
+
+
+
