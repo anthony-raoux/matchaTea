@@ -12,6 +12,8 @@
     justify-content: space-around;
     align-items: center;
     flex: 0 0 20%;
+    /* left: -250px;
+    transition: left 0.3 ease; */
   }
   
   /* La navigation side bar liens */
@@ -29,6 +31,27 @@
     font-weight: 400;
     font-style:italic;
   }
+
+  /* .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+
+#menu-toggle:checked + .menu-icon {
+  display: block;
+}
+
+#menu-toggle:checked ~ .sidenav {
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+} */
+  
+
   
   /* hover les liens  */
 

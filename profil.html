@@ -6,6 +6,7 @@
     <title>Thé Matcha</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
@@ -19,37 +20,51 @@
             </div>
             <div class="titreprincipale">Thé House</div>    
             <div class="logo2">
-                <a href="profil.html"><img src="./images/match2.png" alt="Logo 2"></a>
+                <button class="bouton">Compte nom</button>
             </div>
         </nav>
 
        
     </header>
-    <main>
-            <div class="sidenav">
-                    <a href="vente.html">Vente</a>
-                    <a href="histoire.html">Histoire</a>
-                    <a href="apropos.html">A propos</a>
-                    <a href="contact.html">Contact</a>
-            </div>
-
-            <div class="container_galery">
-                <ul class="galery">
-                    <li class="galery-link"><img src="./images/galery/tea_galery (1).jpg" alt=""></li>
-                    <li><img src="./images/galery/tea_galery (2).jpg" alt=""></li>
-                    <li><img src="./images/galery/tea_galery (3).jpg" alt=""></li>
-                    <li><img src="./images/galery/tea_galery (4).jpg" alt=""></li>
-                    <li><img src="./images/galery/tea_galery (5).jpg" alt=""></li>
-                    <li><img src="./images/galery/tea_galery (6).jpg" alt=""></li>
-                    <li><img src="./images/galery/tea_galery (7).jpg" alt=""></li>
-                    <li><img src="./images/galery/tea_galery (8).jpg" alt=""></li>
-                    <li class="galery-link"><img src="./images/galery/tea_galery (9).jpg" alt=""></li>
-                    <li><img src="./images/galery/tea_galery (10).jpg" alt=""></li>
-                    <li><img src="./images/galery/tea_galery (11).jpg" alt=""></li>
-                    <li><img src="./images/galery/tea_galery (12).jpg" alt=""></li>
-                </ul>
-            </div>
-    </main>    
+        <!-- <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776</label> -->
+        <div class="sidenav">
+            <a href="commandes.html">Commandes</a>
+            <a href="profil.html">Profil</a>
+        </div>
+     
+        <main>
+            <section>
+              <div class="logo_mid">
+                <img src="images/logo droite.png" alt="Logo 2">
+              </div>
+            
+              
+                <form class="panel" action="#" method="post">
+                  
+                  <div class="parent"></div>
+                      <div class="children">
+                        <label >Name :</label>
+                        <input class="ligne" placeholder="Name" required>
+                      </div>
+                      
+                      <div class="children">
+                        <label >Email Adresse :</label>
+                        <input class="ligne" placeholder="Email" required>
+                      </div>
+        
+                      <div class="children">
+                        <label >Adresse :</label>
+                        <input class="ligne" placeholder="Full Adresse" required>
+                      </div>
+                  </div>
+                  
+                  <!-- <a href="#">Envoyer</a> -->
+                  <!-- <input type="submit" value="Envoyer"> -->
+              </form>
+            </section>
+          </main>
+          
 
     <footer>
 
