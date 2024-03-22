@@ -1,5 +1,5 @@
 const toggler = document.querySelector(".hamburger");
-const navLinksContainer = document.querySelector(".sidenav_list");
+const navLinksContainer = document.querySelector(".navlinks-container");
 
 const toggleNav = e => {
   // Animation du bouton
@@ -15,11 +15,18 @@ const toggleNav = e => {
 
 toggler.addEventListener("click", toggleNav);
 
-
-new ResizeObserver(entries => {
-  if (entries[0].contentRect.width <= 900){
-    navLinksContainer.style.transition = "transform 0.4s ease-out";
-  } else {
-    navLinksContainer.style.transition = "none";
+// Exécuter la fonction au chargement de la page
+window.addEventListener("load", () => {
+  if (window.innerWidth > 768) {
+    navLinksContainer.classList.add("open");
   }
-}).observe(document.body)
+});
+
+// Observateur de redimensionnement
+new ResizeObserver(entries => {
+  if (window.innerWidth > 768) {
+    navLinksContainer.classList.add("open");
+  } else {
+    navLinksContainer.classList.remove("open");
+  }
+}).observe(document.body);
