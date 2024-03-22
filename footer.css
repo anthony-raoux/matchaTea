@@ -10,16 +10,18 @@ body {
 
 
 
+/* FOOTER */
 
 footer {
+    margin-left: 150px;
     flex-shrink: 0;
     border-top: 1px solid #000;
-    /* padding: 0 250px; */
+    padding: 0 290px;
     background: #fff;
     color: #333;
-}
-
-.content-footer {
+  }
+  
+  .content-footer {
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
@@ -27,72 +29,73 @@ footer {
     align-items: flex-start;
     font-size: 16px;
     padding: 50px 0 100px;
-}
-
-.bloc {
+  }
+  
+  .bloc {
     flex-basis: 20%;
     margin: 0 30px;
-}
-
-/* contact */
-
-.footer-services {
+  }
+  
+  /* contact */
+  
+  .footer-services {
     font-size: 16px;
     padding-bottom: 20px;
     text-align: center;
-}
-
-.title__call_to_action {
+  }
+  
+  .title__call_to_action {
     font-size: 16px;
     margin-bottom: 15px;
-}
-
-.services-list {
+  }
+  
+  .services-list {
     list-style-type: none;
     display: contents;
-}
-
-.services-list li {
+  }
+  
+  .services-list li {
     padding: 2px 0;
-}
-
-.services-list a {
+  }
+  
+  .services-list a {
     text-decoration: none;
     color: #333;
-}
-
-.services-list a:hover {
+  }
+  
+  .services-list a:hover {
     color: rgb(3,3,3);
-}
-
-.footer_call_to_action {
-    padding: 50px 25px;
+  }
+  
+  .footer_call_to_action {
+    padding: 50px 10px;
     background-color: #f5f5f5;
     text-align: center;
     flex: 1;
-}
-
-.btn_call {
+  }
+  
+  .btn_call {
     border: solid 2px #000;
     padding: 5px 20px;
     text-decoration: none;
     color: #000;
     font-weight: bolder;
     margin: 10px 0;
-}
-
-.footer-contact {
+  }
+  
+  .footer-contact {
     font-size: 16px;
     padding-bottom: 20px;
     padding: 5px 0;
     text-align: center;
-}
-
-.credit {
+  }
+  
+  .credit {
     text-align: center;
     font-size: 24px;
-}
-
+  }
+  
+  
 
 /* Media queries */
 

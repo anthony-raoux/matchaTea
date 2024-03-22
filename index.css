@@ -1,8 +1,42 @@
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+} 
+
+nav {
+  background-color: #dad4d4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.landing_bg {
+  background: url(./images/matcha1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+:root {
+  /* Couleurs */
+  --light-green: #bad7bb;
+  --white: #FFFFFF;
+  --black: #000000;
+  --break-white: #C3C3C3;
+}
+
 /* La side bar */
 
 .sidenav {
-    height: 83vh; 
-    width: 140px; 
+    height: 86.5vh;
+    /* 82.75 */
+    width: 150px;
     position:fixed;
     bottom: 0; 
     left: 0;
@@ -11,7 +45,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    flex: 0 0 20%;
+   
     /* left: -250px;
     transition: left 0.3 ease; */
   }
@@ -19,7 +53,7 @@
   /* La navigation side bar liens */
 
   .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 5px 8px 25px 16px;
     text-decoration: none;
     font-size: 20px;
     color: #000000;
@@ -133,20 +167,6 @@ header {
 body {
   background-color: #bad7bb;
 }
-
-/* responsive */
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-        width: 100px; 
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
-  }
-
-
   
 .parent {
   display: flex;
@@ -173,23 +193,6 @@ body {
 .banniere img {
   width: 100%;
   height: auto;
-}
-
-.overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  margin-top: 50px;
-  font-size: 80px;
-}
-
-.banniere:hover .overlay-text {
-  opacity: 1;
 }
 
 /* Styles for product container */
@@ -253,12 +256,13 @@ body {
   font-size: x-large;
   background-color: #f1f1f1;
   transition: background-color 0.8s ease;
-  margin-left: 150px;
 }
 
 .titre1:hover{
   background-color: darkgreen;
 }
+
+
 
 /* VIDEO */
 
@@ -520,3 +524,101 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+
+
+/* 
+MEDIA QUERIES
+*/
+/* Styles à appliquer pour les écrans de taille supérieure à une tablette */
+@media screen and (min-width: 426px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+
+/* Styles à appliquer pour les écrans de taille inférieure aux smarthphone */
+@media screen and (max-width: 425px) {
+  .titreprincipale {
+    font-size: 20px;
+  }
+
+  .sidenav {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #69bf64;
+    align-items: center;
+    border-radius: 50px;
+    padding: 25px;
+    margin: 0 0 125px 50px;
+  }
+
+  
+  /* hamburger */
+  .hamburger {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    pointer-events: none;
+    transition: opacity 0.3s 0.15s ease-out;
+  }
+  .hamburger span:nth-child(1),
+  .hamburger span:nth-child(3) {
+    transition: transform 0.3s ease-out;
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0s ease-out;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: translate(0) rotate(-135deg);
+  }
+
+  .sidenav_list {  /* navlinks-container */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    transform: translate(-100%);
+    height: 100vh;
+    padding: 15px 50px 15px 20px;
+  }
+  .open {
+    transform: translate(-40%);
+    background: #69bf64;
+
+    /* -180 */
+  }
+
+  .sidenav_list a {
+    font-size: 18px;
+    margin: 10px 0px;
+  }
+
+  .sidenav a { /* La navigation side bar liens */
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    transform: rotate(0deg); 
+  }
+}
+
+
+
+
