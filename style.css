@@ -14,8 +14,6 @@ main {
     color: #4CAF50;
 }
 
-.titre1 {}
-
   nav {
     background-color: #dad4d4;
     display: flex;
@@ -80,6 +78,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 150px;
 }
 
 .children {
@@ -153,6 +152,7 @@ main {
   .container {
     display: flex;
     justify-content:center;
+    margin: 100px;
   }
 
   .ttcolor {

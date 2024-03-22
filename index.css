@@ -345,6 +345,9 @@ footer {
   font-size: 24px;
 }
 
+.navlinks-container:hover {
+  color: #f1f1f1;
+}
 
 
 
@@ -515,11 +518,12 @@ MEDIA QUERIES
 
 .galery {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 150px auto;
   display: flex;
   flex-wrap: wrap;
   gap: 2vmin;
   padding: 0 14px;
+ 
 }
 .galery::after {
   content:'';
@@ -548,6 +552,7 @@ MEDIA QUERIES
 .form_container {
   margin-top: 25px;
   display: flex;
+  margin: 150px;
 }
 
 .box-text {
@@ -643,7 +648,8 @@ MEDIA QUERIES
 /* administrateur */
 
 .administrateur_container {
-  margin: 50px;
+  
+  margin: 150px;
 }
 
 /* .admin_container_gradient {
