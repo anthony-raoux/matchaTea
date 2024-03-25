@@ -236,7 +236,8 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
-  margin: 75px 50px;
+ 
+  margin: 50px 50px 50px 200px;
 }
 
 /* Styles for product container */
@@ -605,6 +606,7 @@ VENTES
 .form_container {
   margin-top: 25px;
   display: flex;
+  margin: 25px 25px 25px 200px;
 }
 
 .box-text {
@@ -866,6 +868,14 @@ HISTOIRE
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+}
+
+  
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin: 25px 25px 25px 650px;
 }
 
 /* effect */
