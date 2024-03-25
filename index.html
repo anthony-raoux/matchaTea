@@ -1,162 +1,198 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-    <header>
-        <nav>
-            <a href="#" class="nav-icon" aria-label="homepage" aria-current="page">
-                <img src="./images/logo_tea.png" alt="chat icon" />
-                <!-- <span>EverChat</span> -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thé Matcha</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!--     font-family: "Gravitas One", serif -> Google font -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap"
+        rel="stylesheet"
+        />
+
+        <!-- font-family: "Inter", sans-serif  -> Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+        <!-- Icon FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+
+
+    <body>
+
+        <header>
+            <nav>
+                <!-- Logo -->
+                <a href="index.html" class="nav-icon" aria-label="homepage" aria-current="page">
+                    <img src="./images/logo_tea.png" alt="chat icon" />
                 </a>
-
-                <div>
-                    <h1>Tea Housse</h1>
+    
+                <!-- Titre Logo -->
+                <div class="logo_title">
+                    <h1>Tea House</h1>
                 </div>
-
+    
+                <!-- Sidebar -->
                 <div class="main-navlinks">
-                    <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+                    <div class="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                     <div class="navlinks-container open">
-                        <a href="#" aria-current="page">Home</a>
-                        <a href="#">Services</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Community</a>
-                        <a href="#">Contact</a>
+                        <a class="navlinks-container_link" href="vente.html">Vente</a>
+                        <a class="navlinks-container_link" href="histoire.html">Histoire</a>
+                        <a class="navlinks-container_link" href="apropos.html">A propos</a>
+                        <a class="navlinks-container_link" href="contact.html">Contact</a>
                     </div>
                 </div>
                 
-        
+                <!-- 2éme Logo -->
                 <div class="nav-authentication">
-                <a href="#" class="user-toggler" aria-label="Sign in page">
-                    <img src="./images/match2.png" alt="user icon" />
-                </a>
-            </div>
-        </nav>
-
-    </header>
-  <body>
-    <section>
-        <div class="bannieretitre1">
-            <div class="banniere">
-                <div class="landing_bg">
-                    <h1>Bienvenue</h1>
+                    <a href="profil.html" class="user-toggler" aria-label="Sign in page">
+                        <img src="./images/match2.png" alt="user icon" />
+                    </a>
                 </div>
-                <!-- <img src="./images/matcha1.webp" alt="banniere"> -->
-                <!-- <div class="overlay-text">Bienvenue</div> -->
-            </div>
-        </div>
-    </section>
+            </nav>
+        </header>
 
-    <section>
-        <div class="titre1">
-            <h1>Nos Produits Matcha</h1>
-        </div>
-    </section>
-
-    <section>
-        <div class="parent">
-            <!-- <div class="regroupe1"> -->
-                <div class="product">   
-                    <img class="product_img" src="./images/prenium.webp" alt="Matcha en Poudre PRENIUM">
-                    <h2>Matcha en Poudre PREMIUM</h2>
-                    <p class="texteproduit">Le produit phare de Thé House, c'est le top du thé matcha premium bio, récolté sur l'île de Kyushu et produit d'un assemblage par le maître de chai. Idéal pour débuter !</p>
-                    <div class="product-footer">
-                        <p>Prix: 33.95€/30g</p>
+        <main class="main">
+            <section class="landing-bg custom-section">
+                <div class="bannieretitre1">
+                    <div class="banniere">
+                        <div class="landing_bg">
+                            <!-- <img class="tea_patern" src="./images/tea_patern.svg" alt=""> -->
+                            <h1 class="banner_title_h1">Bienvenue chez Tea Housse</h1>
+                        </div>
+                        <!-- <img src="./images/matcha1.webp" alt="banniere"> -->
+                        <!-- <div class="overlay-text">Bienvenue</div> -->
                     </div>
                 </div>
-
-                <div class="product">
-                    <img class="product_img" src="./images/bio.jpg" alt="Thé Matcha Biologique">
-                    <h2>Thé Matcha Biologique</h2>
-                    <p class="texteproduit">Découvrez notre thé matcha biologique, cultivé de manière responsable sans l'utilisation de pesticides ni d'engrais chimiques. Profitez d'une tasse de thé matcha saine et délicieuse!</p>
-                    <div class="product-footer">
-                        <p>Prix: 82€/80g</p>
-                    </div>
+            </section>
+        
+            <section class="margin_l-r">
+                <div class="titre1">
+                    <h1 class="main_title_h1">Nos Produits Matcha</h1>
                 </div>
-
-            <!-- </div>
-            <div class="regroupe2"> -->
-                <div class="product"> 
-                    <img class="product_img" src="./images/culinaire.webp" alt="Thé Matcha Culinaire ">
-                    <h2>Thé Matcha Culinaire</h2>
-                    <p class="texteproduit">Poudre de thé Matcha biologique de qualité culinaire provenant d'Uji, Kyoto, Japon. Saveur parfaite pour réaliser des recettes avec du thé matcha.</p>
-                    <div class="product-footer">
-                        <p>Prix: 19.95€/30g</p>
-                    </div>
+            </section>
+        
+            <section  class="margin_l-r">
+                <div class="parent">
+                    <!-- <div class="regroupe1"> -->
+                        <div class="product">   
+                            <img class="producte_img" src="./images/prenium.webp" alt="Matcha en Poudre PRENIUM">
+                            <h2>Matcha en Poudre PREMIUM</h2>
+                            <p class="texteproduit">Le produit phare de Thé House, c'est le top du thé matcha premium bio, récolté sur l'île de Kyushu et produit d'un assemblage par le maître de chai. Idéal pour débuter !</p>
+                            <div class="product-footer">
+                                <p>Prix: 33.95€/30g</p>
+                            </div>
+                        </div>
+        
+                        <div class="product">
+                            <img class="producte_img" src="./images/bio.jpg" alt="Thé Matcha Biologique">
+                            <h2>Thé Matcha Biologique</h2>
+                            <p class="texteproduit">Découvrez notre thé matcha biologique, cultivé de manière responsable sans l'utilisation de pesticides ni d'engrais chimiques. Profitez d'une tasse de thé matcha saine et délicieuse!</p>
+                            <div class="product-footer">
+                                <p>Prix: 82€/80g</p>
+                            </div>
+                        </div>
+        
+                        <div class="product">   
+                            <img class="producte_img" src="./images/prenium.webp" alt="Matcha en Poudre PRENIUM">
+                            <h2>Matcha en Poudre PREMIUM</h2>
+                            <p class="texteproduit">Le produit phare de Thé House, c'est le top du thé matcha premium bio, récolté sur l'île de Kyushu et produit d'un assemblage par le maître de chai. Idéal pour débuter !</p>
+                            <div class="product-footer">
+                                <p>Prix: 33.95€/30g</p>
+                            </div>
+                        </div>
+        
+                    <!-- </div> -->
+                    <!-- <div class="regroupe2"> -->
+                        <div class="product"> 
+                            <img class="producte_img" src="./images/culinaire.webp" alt="Thé Matcha Culinaire ">
+                            <h2>Thé Matcha Culinaire</h2>
+                            <p class="texteproduit">Poudre de thé Matcha biologique de qualité culinaire provenant d'Uji, Kyoto, Japon. Saveur parfaite pour réaliser des recettes avec du thé matcha.</p>
+                            <div class="product-footer">
+                                <p>Prix: 19.95€/30g</p>
+                            </div>
+                        </div>
+        
+                        <div class="product">
+                            <img class="producte_img" src="./images/ceremonie.jpg" alt="Thé Matcha Cérémonie">
+                            <h2>Thé Matcha Cérémonie</h2>
+                            <p class="texteproduit">100 % poudre de thé vert matcha bio - Origine Nishio (Aichi, Japon)
+                                Récolte et production 100 % manuelles
+                                
+                                • Thé matcha traditionnel (à l'eau)
+                                
+                                • Thé matcha latte
+                                
+                                • Pâtisserie
+                                
+                                On ne saurait produire un matcha de meilleure qualité. D'une grande finesse et sans amertume, il est votre préféré et a remporté le prix du 🏆 Meilleur Produit BIO 2024 !</p>
+                            <div class="product-footer">
+                                <p>Prix: 28€/30g</p>
+                            </div>
+                        </div>
+        
+                        <div class="product"> 
+                            <img class="producte_img" src="./images/culinaire.webp" alt="Thé Matcha Culinaire ">
+                            <h2>Thé Matcha Culinaire</h2>
+                            <p class="texteproduit">Poudre de thé Matcha biologique de qualité culinaire provenant d'Uji, Kyoto, Japon. Saveur parfaite pour réaliser des recettes avec du thé matcha.</p>
+                            <div class="product-footer">
+                                <p>Prix: 19.95€/30g</p>
+                            </div>
+                        </div>
+        
+                    <!-- </div> -->
                 </div>
-
-                <div class="product">
-                    <img class="product_img" src="./images/ceremonie.jpg" alt="Thé Matcha Cérémonie">
-                    <h2>Thé Matcha Cérémonie</h2>
-                    <p class="texteproduit">100 % poudre de thé vert matcha bio - Origine Nishio (Aichi, Japon)
-                        Récolte et production 100 % manuelles
-                        
-                        • Thé matcha traditionnel (à l'eau)
-                        
-                        • Thé matcha latte
-                        
-                        • Pâtisserie
-                        
-                        On ne saurait produire un matcha de meilleure qualité. D'une grande finesse et sans amertume, il est votre préféré et a remporté le prix du 🏆 Meilleur Produit BIO 2024 !</p>
-                    <div class="product-footer">
-                        <p>Prix: 28€/30g</p>
-                    </div>
+            </section>
+        
+            <section class="margin_l-r">
+                <div class="video-container">
+                    <video playsinline="true" preload="metadata" poster="./images/capture video.webp" autoplay loop>
+                        <source src="https://cdn.shopify.com/videos/c/vp/bb53c43119ee48c5b0ffcc0268c9f1b0/bb53c43119ee48c5b0ffcc0268c9f1b0.HD-1080p-7.2Mbps-20882589.mp4" type="video/mp4">
+                    </video>
                 </div>
-            <!-- </div> -->
-        </div>
-    </section>
+            </section>
+        </main>
 
-    <section>
-        <div class="video-container" style="margin-top: 100px; margin-bottom: 100px;">
-            <div class="video-media">
-              <video playsinline="true" preload="metadata" controls poster="./images/capture video.webp">
-                <source src="https://cdn.shopify.com/videos/c/vp/bb53c43119ee48c5b0ffcc0268c9f1b0/bb53c43119ee48c5b0ffcc0268c9f1b0.HD-1080p-7.2Mbps-20882589.mp4" type="video/mp4">
-              </video>
-            </div>
-        </div>
-    </section>
-
-  </body>
-  <footer>
-
-    <div class="content-footer">
+    </body>
+    <footer>
+        <div class="content-footer">
+            <!-- Navigation Bloc -->
             <div class="bloc footer-services">
                 <h3>Navigation</h3>
                 <ul class="services-list">
-                    <li><a>Accueil</a></li>
-                    <li><a>Histoire</a></li>
-                    <li><a>A propos</a></li>
-                    <li><a>Vente</a></li>
-                    <li><a>Contact</a></li>
+                    <li><a class="services-list_link">Accueil</a></li>
+                    <li><a class="services-list_link">Histoire</a></li>
+                    <li><a class="services-list_link">A propos</a></li>
+                    <li><a class="services-list_link">Vente</a></li>
+                    <li><a class="services-list_link">Contact</a></li>
                 </ul>
             </div>
-
-            <!-- call to action -->
+            <!-- Call to action Bloc -->
             <div class="bloc footer_call_to_action">
                 <h3 class="title__call_to_action">Thanks for stopping by!</h3>
                 <a class="btn_call" href="#">Let's keep in touch</a>
             </div>
-
+            <!-- Coordonées Bloc -->
             <div class="bloc footer-contact">
                 <h3>Coordonnées</h3>
-                <p>8 rue d'Horier</p>
-                <p>10002</p>
-                <p>Marseille</p>
+                <ul class="footer-contact_container">
+                    <li class="footer-contact_list"><a class="footer-contact_link" href="">8 rue d'Horier <br> 10002 <br> Marseille</a></li>
+                </ul>
             </div>
         </div>
+        <!-- Credir Bloc -->
         <p class="credit">La Plateforme, 2024</p>
 
-</footer>
-  <script src="script.js"></script>
+    </footer>
+
+    <!-- Appel de la page Javascript -->
+    <script src="script.js"></script>
 </html>
