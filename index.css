@@ -701,10 +701,6 @@ VENTES
 
 /* administrateur */
 
-.administrateur_container {
-  margin: 50px;
-}
-
 /* .admin_container_gradient {
   background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)),
   var(--black_tea)000;

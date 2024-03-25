@@ -11,8 +11,9 @@ body {
 .table-style  {
     border-collapse: collapse;
     cursor: pointer;
-    margin: 150px auto;
+    margin: 50px 50px 50px 500px;
     border: 2px solid midnightblue;
+    margin-top: 100px;
 }
 
 .user_name_case {
